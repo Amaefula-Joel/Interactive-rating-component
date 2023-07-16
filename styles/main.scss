@@ -27,8 +27,9 @@ $dark-blue-x2: hsl(216, 12%, 8%);
 
 
 h2{
-    font-size: 29px;
+    font-size: 28px;
     color: white;
+    font-weight: 700;
 }
 
 p{
@@ -41,11 +42,13 @@ main{
 
     .rating-outer{
         min-height: 100dvh;
+        padding: 45px 30px;
 
         .rating-inner, .thank-you-container{
-            max-width: 400px;
-            background-color: rgb(33, 40, 50);
-            border-radius: 20px;
+            max-width: 405px;
+            background-color: #1c222b;
+            border-radius: 30px;
+            padding: 35px;
         }
 
         .rating-inner{
