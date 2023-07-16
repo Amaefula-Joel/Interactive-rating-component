@@ -1,0 +1,104 @@
+*{
+    font-family: 'Overpass', sans-serif;
+    transition: .2s;
+}
+
+// primary colors 
+$primary-orange: hsl(25, 97%, 53%);
+
+// secondary colors
+$light-gray: hsl(217, 12%, 63%);
+$mid-gray: hsl(216, 12%, 54%);
+$dark-blue: hsl(213, 19%, 18%);
+$dark-blue-x2: hsl(216, 12%, 8%);
+
+
+// mixins
+@mixin roundedCircle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $light-gray;
+    background-color: rgb(38, 47, 56);
+}
+
+
+h2{
+    font-size: 29px;
+    color: white;
+}
+
+p{
+    font-size: 15px;
+    color: $light-gray;
+}
+
+main{
+    background-color: $dark-blue-x2;
+
+    .rating-outer{
+        min-height: 100dvh;
+
+        .rating-inner, .thank-you-container{
+            max-width: 400px;
+            background-color: rgb(33, 40, 50);
+            border-radius: 20px;
+        }
+
+        .rating-inner{
+            .star-icon-con{
+                @include roundedCircle;
+                margin-bottom: 25px;
+            }
+
+            .rating-button-container{
+                button{
+                    @include roundedCircle;
+
+                    &:hover{
+                        background-color: $primary-orange;
+                        color: white;
+                    }
+
+                    &.active{
+                        background-color: $mid-gray;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .thank-you-container{
+            .rating{
+                p{
+                    color: $primary-orange;
+                    background-color: rgb(38, 47, 56);
+                    padding: 6px 12px;
+                    border-radius: 20px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.custombtn{
+    width: 100%;
+    background-color: $primary-orange;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    &:hover{
+        color: $primary-orange;
+        background-color: white;
+    }
+}

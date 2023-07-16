@@ -1,0 +1,79 @@
+* {
+  font-family: "Overpass", sans-serif;
+  transition: 0.2s;
+}
+
+h2 {
+  font-size: 29px;
+  color: white;
+}
+
+p {
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+}
+
+main {
+  background-color: hsl(216, 12%, 8%);
+}
+main .rating-outer {
+  min-height: 100dvh;
+}
+main .rating-outer .rating-inner, main .rating-outer .thank-you-container {
+  max-width: 400px;
+  background-color: rgb(33, 40, 50);
+  border-radius: 20px;
+}
+main .rating-outer .rating-inner .star-icon-con {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(217, 12%, 63%);
+  background-color: rgb(38, 47, 56);
+  margin-bottom: 25px;
+}
+main .rating-outer .rating-inner .rating-button-container button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(217, 12%, 63%);
+  background-color: rgb(38, 47, 56);
+}
+main .rating-outer .rating-inner .rating-button-container button:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+main .rating-outer .rating-inner .rating-button-container button.active {
+  background-color: hsl(216, 12%, 54%);
+  color: white;
+}
+main .rating-outer .thank-you-container .rating p {
+  color: hsl(25, 97%, 53%);
+  background-color: rgb(38, 47, 56);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.custombtn {
+  width: 100%;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 20px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.custombtn:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: white;
+}/*# sourceMappingURL=main.css.map */

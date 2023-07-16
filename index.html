@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Joel Amaefula">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet"> -->
+
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="styles/main.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body>
+
+  <main>
+
+    <h1 class="sr-only">Interactive rating component</h1>
+
+    <div class="rating-outer || d-flex justify-content-center align-items-center flex-column">
+
+      <!-- Rating state start -->
+      <div class="rating-inner p-4">
+
+        <div class="star-icon-con">
+          <img src="images/icon-star.svg" alt="star image">
+        </div>
+
+        <h2 class="mb-3">How did we do?</h2>
+
+        <p class="mb-4">Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!</p>
+
+          <div class="rating-button-container mb-4 pb-3 d-flex justify-content-between">
+            <button class="border-0">1</button>
+            <button class="border-0">2</button>
+            <button class="border-0">3</button>
+            <button class="border-0">4</button>
+            <button class="border-0">5</button>
+          </div>
+          
+          <button id="submit" class="btn custombtn">Submit</button>
+      </div>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <div class="thank-you-container text-center p-4 pt-5 d-none">
+
+        <img src="images/illustration-thank-you.svg" alt="thank you" class="mb-4">
+
+        <div class="rating">
+          <p class="d-inline-block ">You selected <span class="rating-num"></span> out of 5</p>
+        </div>
+
+        <h2 class="mb-3">Thank you!</h2>
+
+        <p>We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!</p>
+      </div>
+      <!-- Thank you state end -->
+  
+      <div class="attribution || mt-4 text-light">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Joel Amaefula</a>.
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="bootstrap-4.6.2-dist/jquery.min.js"></script>
+  <script src="bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script> -->
+
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
